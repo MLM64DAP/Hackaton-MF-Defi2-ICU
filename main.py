@@ -138,6 +138,8 @@ with tabs[2]:
     ---
 
     ## 3. La solution
+                
+    ![Schéma illustrant la solution](image.webp)
 
     ### 3.1 Description générale
     L’application Streamlit comprend :  
@@ -222,12 +224,4 @@ with tabs[2]:
     - README détaillant la méthodologie
     """)
 
-    # Après la section 3. La solution
-    st.subheader("3.1 Visualisation de la solution")
 
-    # Affichage de l'image
-    st.image(
-        "image.webp",  # chemin local ou URL
-        caption="Schéma illustrant la solution ClimAtlas Vulnérabilités",
-        use_column_width=True
-    )
