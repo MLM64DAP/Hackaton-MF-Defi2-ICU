@@ -125,9 +125,9 @@ with tabs[0]:
 
     ### 3.4 Méthode de construction de la solution
     - **Extraction et traitement des données CPRCM**
-    - Calcul des indicateurs de fortes chaleurs annuels
-    - Agrégation par maximum sur 20 ans
-    - Construction d’un dataset consolidé par scénario (actuel et +2.7°C)
+        - Calcul des indicateurs de fortes chaleurs annuels
+        - Agrégation par maximum sur 20 ans
+        - Construction d’un dataset consolidé par scénario (actuel et +2.7°C)
     - **Préparation des données démographiques**
     - Récupération des projections INSEE
     - Descente d’échelle (carroyage 1 km²)
