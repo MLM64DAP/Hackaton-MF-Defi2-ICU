@@ -221,3 +221,13 @@ with tabs[2]:
     - Application Streamlit  
     - README détaillant la méthodologie
     """)
+
+    # Après la section 3. La solution
+    st.subheader("3.1 Visualisation de la solution")
+
+    # Affichage de l'image
+    st.image(
+        "image.webp",  # chemin local ou URL
+        caption="Schéma illustrant la solution ClimAtlas Vulnérabilités",
+        use_column_width=True
+    )
