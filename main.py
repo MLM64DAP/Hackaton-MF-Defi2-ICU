@@ -16,7 +16,7 @@ st.sidebar.markdown("""
 """)
 
 # --- Onglets ---
-tabs = st.tabs(["Contexte scientifique", "Carte interactive", "Pour aller plus loin"])
+tabs = st.tabs(["Contexte de l'étude", "Carte interactive"])
 
 
 # --- Onglet 1 : Contexte scientifique ---
