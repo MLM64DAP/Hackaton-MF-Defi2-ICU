@@ -168,10 +168,10 @@ with tabs[0]:
     - **Application Streamlit en ligne** : [ClimAtlas Vulnérabilités](https://hackaton-mf-defi2-icu-xpkqbvnjcbszzp2yzgavl3.streamlit.app/)  
     - **Dépôt GitHub complet** : [impact-chaleur-future-population](https://github.com/royantoine/impact-chaleur-future-population)  
     Contient :
-    - Notebooks de calcul des indicateurs climatiques  
-    - Code de pré-processing démographique  
-    - Application Streamlit  
-    - README détaillant la méthodologie
+        - Notebooks de calcul des indicateurs climatiques  
+        - Code de pré-processing démographique  
+        - Application Streamlit  
+        - README détaillant la méthodologie
                 
     ## 6. Améliorations futures
 
