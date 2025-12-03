@@ -16,12 +16,12 @@ st.sidebar.markdown("""
 """)
 
 # --- Onglets ---
-tabs = st.tabs(["Contexte scientifique", "Carte interactive", "Pour aller plus loin"])
+tabs = st.tabs(["Notre projet", "Carte interactive"])
 
 
 # --- Onglet 1 : Contexte scientifique ---
 with tabs[0]:
-    st.title("Impact des îlots de chaleur et du réchauffement climatique sur les populations sensibles")
+    st.title("🌡️ ClimAtlas Vulnérabilité")
 
     st.markdown("""
     ## 🎯 Objectif du projet
@@ -33,86 +33,8 @@ with tabs[0]:
                 
     🔗 [Voir le code source sur GitHub](https://github.com/royantoine/impact-chaleur-future-population)
 
-    ## 🧠 Problématique
-
-    Le changement climatique augmente la fréquence et l’intensité :
-
-    - des **jours > 35°C**
-    - des **nuits tropicales (>20°C)**  
-    - des **vagues de chaleur**  
-    - des **vagues de nuits tropicales**
-
-    Les populations **âgées**, **précaires** et **isolées** sont les plus vulnérables.
-
     ---
-
-    ## 🧬 Approche adoptée
-
-    1. Indicateurs climatiques du modèle **CPRCM (CNRM-AROME 2,5 km)**  
-    2. Calculs sur 20 ans → **maximum interannuel**
-    3. Croisement avec les données **INSEE**  
-    4. Projection démographique alignée TRACC  
-    5. Visualisation interactive via **Streamlit**
-
-    ---
-
-    ## 🛰️ Données utilisées
-
-    ### 🌡️ Climate – CPRCM (CNRM-AROME46t1)
-    | Période | Scénario TRACC | Année pivot | Fenêtre |
-    |--------|----------------|-------------|---------|
-    | Aujourd’hui | Baseline | 2025 | 2015–2034 |
-    | +2°C | TRACC 2030 | 2052 | 2042–2061 |
-    | +2.7°C | TRACC 2050 | 2078 | 2068–2087 |
-
-    ---
-
-    ## 📊 Indicateurs retenus
-
-    - **Nuits tropicales annuelles**
-    - **Jours en vague de chaleur (min >20°C & max >35°C)**
-    - **Jours en vague de nuits tropicales**
-    - **Jours en vague de chaleur v0 (max >35°C)**
-
-    ⚠️ Valeurs = **pire cas possible (max annuel)**.
-
-    ---
-
-    ## 🏛️ Usages attendus
-    - Identification des **quartiers prioritaires exposés**
-    - Appui à la lutte contre les **îlots de chaleur urbains**
-    - Aide aux **PCAET**, **CRTE**, diagnostics territoriaux
-    """)
-
-
-# --- Onglet 2 : Carte interactive ---
-with tabs[1]:
-    st.header("Carte interactive des indicateurs de chaleur")
-
-    # ⚠️ Warning pour le temps de chargement
-    st.warning("⚠️ Le temps de chargement de la carte peut être un peu long en fonction de votre connexion et du filtrage choisi.")
-
-
-    st.markdown("### 🔎 Carte dynamique hébergée sur le site de l'équipe")
-    st.markdown("*(Développée via Mapbox )*")
-
-    # ---- Affichage de la carte via IFRAME ----
-    st.components.v1.iframe(
-        src="https://leplan.studio/wip/test2_hackathon_MF/",
-        height=800,
-        scrolling=True
-    )
-
-# --- Onglet 3 : Description précise et pour aller plus loin ---
-with tabs[2]:
-    st.title("🌡️ ClimAtlas Vulnérabilités")
-
-    # --- Contexte et problématique ---
-    st.markdown("""
-    Visualiser l’augmentation du risque de fortes chaleurs pour les personnes âgées en France.
-
-    ---
-
+                
     ## 1. Contexte : hausse des températures & croissance des populations âgées
 
     La France connaît déjà une multiplication des épisodes de fortes chaleurs à travers son territoire.  
@@ -266,5 +188,27 @@ with tabs[2]:
     - ajouter une visualisation pour un niveau de réchauffement +4°C
                             
     """)
+
+
+# --- Onglet 2 : Carte interactive ---
+with tabs[1]:
+    st.header("Carte interactive des indicateurs de chaleur")
+
+    # ⚠️ Warning pour le temps de chargement
+    st.warning("⚠️ Le temps de chargement de la carte peut être un peu long en fonction de votre connexion et du filtrage choisi.")
+
+
+    st.markdown("### 🔎 Carte dynamique hébergée sur le site de l'équipe")
+    st.markdown("*(Développée via Mapbox )*")
+
+    # ---- Affichage de la carte via IFRAME ----
+    st.components.v1.iframe(
+        src="https://leplan.studio/wip/test2_hackathon_MF/",
+        height=800,
+        scrolling=True
+    )
+
+
+
 
 
