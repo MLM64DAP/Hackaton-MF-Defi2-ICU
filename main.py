@@ -103,8 +103,8 @@ with tabs[1]:
 with tabs[2]:
     st.title("🌡️ ClimAtlas Vulnérabilités")
 
+    # --- Contexte et problématique ---
     st.markdown("""
-
     Visualiser l’augmentation du risque de fortes chaleurs pour les personnes âgées en France.
 
     ---
@@ -134,37 +134,45 @@ with tabs[2]:
     Fournir une plateforme simple, interactive et autoportante permettant de croiser **données climatiques** et **données démographiques** pour repérer les territoires — jusqu’à l’échelle des quartiers — où la vulnérabilité thermique des personnes âgées va le plus augmenter.  
 
     L’outil vise à transmettre en quelques secondes une information précise, actionnable et territorialisée, utile aux **collectivités**, **urbanistes**, **acteurs sanitaires** et **décideurs publics**.
+    """)
 
-    ---
+    # --- 3. La solution ---
+    st.markdown("## 3. La solution")
 
-    ## 3. La solution
-                
-    ![Schéma illustrant la solution](image.webp)
+    # --- Affichage de l'image après la section 3 ---
+    st.subheader("3.1 Visualisation de la solution")
+    st.image(
+        "image.webp",  # chemin relatif ou URL
+        caption="Schéma illustrant la solution ClimAtlas Vulnérabilités",
+        use_column_width=True
+    )
 
-    ### 3.1 Description générale
+    # --- Suite de la description ---
+    st.markdown("""
+    ### 3.2 Description générale
     L’application Streamlit comprend :  
 
     - Une **carte interactive** permettant :
-    - de naviguer dans le territoire à différentes échelles (commune / EPCI / département / région)
-    - d’afficher le croisement d’un indicateur représentatif de l’aléa de forte chaleur et de la démographie des populations âgées, aujourd’hui et à l’horizon 2050 (+2.7°C)
+      - de naviguer dans le territoire à différentes échelles (commune / EPCI / département / région)
+      - d’afficher le croisement d’un indicateur représentatif de l’aléa de forte chaleur et de la démographie des populations âgées, aujourd’hui et à l’horizon 2050 (+2.7°C)
     - Une **page de documentation intégrée**, rendant la solution accessible et compréhensible sans expertise préalable  
 
     ➡️ Application en ligne : [ClimAtlas Vulnérabilités](https://hackaton-mf-defi2-icu-xpkqbvnjcbszzp2yzgavl3.streamlit.app/)
 
-    ### 3.2 Usage des données
+    ### 3.3 Usage des données
     **Données climatiques — Météo-France / CPRCM**  
     - Modèle : CNRM-AROME46t1, 2,5 km de résolution  
     - Forçage : CNRM-ESM2-1, scénario SSP3-7.0  
     - Périodes TRACC :
-    - **baseline** : 2015–2034, pivot 2025
-    - **+2.7°C** : 2068–2087, pivot 2078  
+      - **baseline** : 2015–2034, pivot 2025
+      - **+2.7°C** : 2068–2087, pivot 2078  
 
     **Indicateurs climatiques** :  
     - Pire cas annuel sur 20 ans pour le nombre de jours et nuits consécutifs en vague de chaleur (min > 20°C et max > 35°C)  
     - Autres indicateurs non intégrés faute de temps :  
-    - Nombre de nuits tropicales (min > 20°C)  
-    - Nombre de jours en vague de nuits tropicales  
-    - Nombre de jours avec vagues de chaleur (max > 35°C)  
+      - Nombre de nuits tropicales (min > 20°C)  
+      - Nombre de jours en vague de nuits tropicales  
+      - Nombre de jours avec vagues de chaleur (max > 35°C)  
 
     **Données démographiques — INSEE** :  
     - Projections 2018–2070 par département  
@@ -172,7 +180,7 @@ with tabs[2]:
     - Variables : population totale, personnes âgées  
     - Possibilité de croisement avec WorldPop / données IRIS envisagée mais non intégrée  
 
-    ### 3.3 Méthode de construction de la solution
+    ### 3.4 Méthode de construction de la solution
     - **Extraction et traitement des données CPRCM**
     - Calcul des indicateurs de fortes chaleurs annuels
     - Agrégation par maximum sur 20 ans
@@ -188,7 +196,6 @@ with tabs[2]:
     - Affichage d’une carte interactive
     - Comparaison des scénarios
     - Intégration d’une documentation autoportante
-
     ---
 
     ## 4. Impact envisagé
