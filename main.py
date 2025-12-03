@@ -127,19 +127,25 @@ with tabs[2]:
     La population française vieillissante fera que la proportion de personnes de 65 ans et plus sera nettement plus élevée en 2050.  
     L’intersection entre population plus âgée et exposition croissante aux chaleurs extrêmes constitue un enjeu majeur de santé publique et d’aménagement du territoire.
     """)
-    # --- Affichage de l'image après la section 3 ---
+    # --- Affichage de l'image après la section 1---
     st.subheader("1.1 Evolution de la population +65 ans")
     st.image(
         "image_2.webp",  # chemin relatif ou URL
         width=600  # largeur en pixels
     )
 
-    # --- Affichage de l'image après la section 3 ---
+    # Ajout de la source en dessous
+    st.caption("Source : [INED - Vieillissement de la population](https://www.ined.fr/fr/tout-savoir-population/memos-demo/focus/vieillissement-de-la-population-accelere-en-france-et-dans-la-plupart-des-pays-developpes/)")
+
+    # --- Affichage de l'image après la section 1 ---
     st.subheader("1.2 Vagues de chaleur en France")
     st.image(
         "image_1.webp",  # chemin relatif ou URL
         width=600  # largeur en pixels
     )
+
+    # Ajout de la source en dessous
+    st.caption("Source : [DRIAS- Vagues de chaleur](https://www.drias-climat.fr/accompagnement/sections/417)")
 
     st.markdown("""
     ## 2. Problématique & proposition de valeur
