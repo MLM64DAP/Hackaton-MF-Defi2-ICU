@@ -30,6 +30,8 @@ with tabs[0]:
     pour les **populations vulnérables**, aux horizons **2030** et **2050** (méthodologie TRACC).
 
     ---
+                
+    🔗 [Voir le code source sur GitHub](https://github.com/royantoine/impact-chaleur-future-population)
 
     ## 🧠 Problématique
 
@@ -47,7 +49,7 @@ with tabs[0]:
     ## 🧬 Approche adoptée
 
     1. Indicateurs climatiques du modèle **CPRCM (CNRM-AROME 2,5 km)**  
-    2. Calculs sur 20 ans → **valeurs maximales annuelles**
+    2. Calculs sur 20 ans → **maximum interannuel**
     3. Croisement avec les données **INSEE**  
     4. Projection démographique alignée TRACC  
     5. Visualisation interactive via **Streamlit**
@@ -88,7 +90,7 @@ with tabs[1]:
     st.header("Carte interactive des indicateurs de chaleur")
 
     st.markdown("### 🔎 Carte dynamique hébergée sur le site de l'équipe")
-    st.markdown("*(Développée via Mapbox par ton collègue)*")
+    st.markdown("*(Développée via Mapbox )*")
 
     # ---- Affichage de la carte via IFRAME ----
     st.components.v1.iframe(
