@@ -96,7 +96,7 @@ with tabs[0]:
 
     ---
     """)
-)
+
 
 # --- Onglet 2 : Carte interactive ---
 with tabs[1]:
