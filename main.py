@@ -112,7 +112,7 @@ with tabs[0]:
     - **Dépôt GitHub** : [impact-chaleur-future-population](https://github.com/royantoine/impact-chaleur-future-population)  
     Contient : notebooks climat, code démographique, application Streamlit, README méthodologie  
 
-                    ---  
+    ---  
 
             
     ## 6. Perspectives futures
