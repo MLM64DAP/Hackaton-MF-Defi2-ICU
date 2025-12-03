@@ -24,7 +24,7 @@ tabs = st.tabs(["Contexte scientifique", "Carte interactive"])
 with tabs[0]:
     st.title("Impact des îlots de chaleur et du réchauffement climatique sur les populations sensibles")
     
-    st.markdown(st.markdown("""
+    st.markdown("""
     ## 🎯 Objectif du projet
 
     Identifier le niveau d'exposition aux **risques climatiques** — vagues de chaleur, nuits tropicales et vagues de nuits tropicales — auxquels seront confrontées les **populations vulnérables** selon leur localisation, aux horizons **2030** et **2050** (méthodologie TRACC).
