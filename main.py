@@ -122,9 +122,28 @@ with tabs[2]:
     Ces épisodes affectent particulièrement les **personnes vulnérables**, notamment les **personnes âgées**, surtout si elles vivent seules, en milieu urbain dense ou dans des zones précaires.  
     La population française vieillissante fera que la proportion de personnes de 65 ans et plus sera nettement plus élevée en 2050.  
     L’intersection entre population plus âgée et exposition croissante aux chaleurs extrêmes constitue un enjeu majeur de santé publique et d’aménagement du territoire.
+    """)
+    # --- 1. Evolution +65 ---
+    st.markdown("## 1. Contexte")
 
-    ---
+    # --- Affichage de l'image après la section 3 ---
+    st.subheader("1.1 Evolution de la population +65 ans")
+    st.image(
+        "image_2.webp",  # chemin relatif ou URL
+        width=600  # largeur en pixels
+    )
 
+    # --- 3. La solution ---
+    st.markdown("## 1. Contexte")
+
+    # --- Affichage de l'image après la section 3 ---
+    st.subheader("1.2 Vagues de chaleur en France")
+    st.image(
+        "image_1.webp",  # chemin relatif ou URL
+        width=600  # largeur en pixels
+    )
+
+    st.markdown("""
     ## 2. Problématique & proposition de valeur
 
     ### Problématique
