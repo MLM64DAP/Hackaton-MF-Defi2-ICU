@@ -16,7 +16,7 @@ st.sidebar.markdown("""
 """)
 
 # --- Onglets ---
-tabs = st.tabs(["Notre projet", "Carte interactive"])
+tabs = st.tabs(["Visualiser l’augmentation du risque de fortes chaleurs pour les personnes âgées en France entre aujourd’hui et 2050", "Carte interactive"])
 
 
 # --- Onglet 1 : Contexte scientifique ---
