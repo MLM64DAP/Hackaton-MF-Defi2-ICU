@@ -89,6 +89,10 @@ with tabs[0]:
 with tabs[1]:
     st.header("Carte interactive des indicateurs de chaleur")
 
+    # ⚠️ Warning pour le temps de chargement
+    st.warning("⚠️ Le temps de chargement de la carte peut être un peu long en fonction de votre connexion et du filtrage choisi.")
+
+
     st.markdown("### 🔎 Carte dynamique hébergée sur le site de l'équipe")
     st.markdown("*(Développée via Mapbox )*")
 
