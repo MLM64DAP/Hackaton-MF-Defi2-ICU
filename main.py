@@ -144,7 +144,7 @@ with tabs[2]:
     st.image(
         "image.webp",  # chemin relatif ou URL
         caption="Schéma illustrant la solution ClimAtlas Vulnérabilités",
-        use_column_width=True
+        width=600  # largeur en pixels
     )
 
     # --- Suite de la description ---
