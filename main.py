@@ -232,17 +232,17 @@ with tabs[2]:
                 
     ## 6. Améliorations futures
 
-    Intégrer plus de données sur la vulnérabilité des populations :  
-        - Intégration de données démographiques plus fines (IRIS, WorldPop)
-        - prendre en compte la précarité des ménages, les conditions d’isolement des bâtiments à partir des DPEs etc.
-        - Intégrer d'autres tranches de la population (enfants, personnes en situation de handicap, etc.)    
+    ### Intégrer plus de données sur la vulnérabilité des populations :  
+    - Intégration de données démographiques plus fines (IRIS, WorldPop)
+    - prendre en compte la précarité des ménages, les conditions d’isolement des bâtiments à partir des DPEs etc.
+    - Intégrer d'autres tranches de la population (enfants, personnes en situation de handicap, etc.)    
     
-    Ilôts de chaleur : 
-        - Calculer l'évolution du différentiel de température entre centres urbains et zones péri-urbaines/rurales
+    ### Ilôts de chaleur : 
+    - Calculer l'évolution du différentiel de température entre centres urbains et zones péri-urbaines/rurales
     
-    Indicateurs climatiques :
-        - intégrer des seuils régionalisés pour tenir compte du contexte local dans la définition des vagues de chaleur
-        - ajouter une visualisation pour un niveau de réchauffement +4°C
+    ### Indicateurs climatiques :
+    - intégrer des seuils régionalisés pour tenir compte du contexte local dans la définition des vagues de chaleur
+    - ajouter une visualisation pour un niveau de réchauffement +4°C
                             
     """)
 
