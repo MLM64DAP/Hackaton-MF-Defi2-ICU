@@ -35,7 +35,7 @@ with tabs[0]:
 
     ## 🧠 Problématique
 
-    Le réchauffement climatique augmente la fréquence et l’intensité :
+    Le changement climatique augmente la fréquence et l’intensité :
 
     - des **jours > 35°C**
     - des **nuits tropicales (>20°C)**  
@@ -229,6 +229,21 @@ with tabs[2]:
     - Code de pré-processing démographique  
     - Application Streamlit  
     - README détaillant la méthodologie
+                
+    ## 6. Améliorations futures
+
+    Intégrer plus de données sur la vulnérabilité des populations :  
+        - Intégration de données démographiques plus fines (IRIS, WorldPop)
+        - prendre en compte la précarité des ménages, les conditions d’isolement des bâtiments à partir des DPEs etc.
+        - Intégrer d'autres tranches de la population (enfants, personnes en situation de handicap, etc.)    
+    
+    Ilôts de chaleur : 
+        - Calculer l'évolution du différentiel de température entre centres urbains et zones péri-urbaines/rurales
+    
+    Indicateurs climatiques :
+        - intégrer des seuils régionalisés pour tenir compte du contexte local dans la définition des vagues de chaleur
+        - ajouter une visualisation pour un niveau de réchauffement +4°C
+                            
     """)
 
 
