@@ -24,27 +24,79 @@ tabs = st.tabs(["Contexte scientifique", "Carte interactive"])
 with tabs[0]:
     st.title("Impact des îlots de chaleur et du réchauffement climatique sur les populations sensibles")
     
-    st.markdown("""
-    ### Qu'est-ce qu'un îlot de chaleur ?
-    Les **îlots de chaleur urbains** sont des zones où la température est significativement plus élevée que dans les zones rurales environnantes, principalement à cause de l’urbanisation, du béton et du manque de végétation.
+    st.markdown(st.markdown("""
+    ## 🎯 Objectif du projet
 
-    ### Populations sensibles
-    - Personnes âgées  
-    - Enfants  
-    - Personnes souffrant de maladies chroniques  
-    - Ménages à faibles revenus  
+    Identifier le niveau d'exposition aux **risques climatiques** — vagues de chaleur, nuits tropicales et vagues de nuits tropicales — auxquels seront confrontées les **populations vulnérables** selon leur localisation, aux horizons **2030** et **2050** (méthodologie TRACC).
 
-    ### Indicateurs étudiés
-    - **Jours à plus de 35°C**  
-    - **Nuits tropicales**  
-    - **Populations âgées projetées en 2070**  
-    - **Indice combiné de sensibilité**
+    ---
 
-    ### Conséquences
-    - Risques accrus de **coup de chaleur et maladies cardiovasculaires**  
-    - Augmentation de la **mortalité et morbidité**  
-    - Accentuation des **inégalités sociales et territoriales**
+    ## 🧠 Problématique
+
+    Le réchauffement climatique augmente la fréquence et l’intensité :
+
+    - des **jours > 35°C**, dangereux pour la santé (déshydratation, surmortalité)  
+    - des **nuits tropicales (>20°C)**, limitant la récupération physiologique  
+    - des **vagues de chaleur** (≥ 3 jours consécutifs très chauds)  
+    - des **vagues de nuits tropicales** (≥ 3 nuits consécutives >20°C)  
+
+    Les populations **âgées**, **précaires** ou **isolées** sont les plus vulnérables. Ce projet vise à mesurer cet impact à une échelle fine pour aider les collectivités à anticiper.
+
+    ---
+
+    ## 🧬 Approche adoptée
+
+    1. **Indicateurs climatiques** issus du modèle CPRCM (CNRM-AROME 2,5 km), forcé par CNRM-ESM2-1 pour le scénario SSP3-7.0  
+    2. Calcul des indicateurs sur 20 ans pour chaque scénario, puis prise du **maximum annuel** :  
+    - `n_tropical_nights_min20`  
+    - `n_heatwaves_days_min20_max35`  
+    - `n_heatwaves_days_min20`  
+    - `n_heatwaves_days_max35`  
+    3. **Croisement** avec les données INSEE : population totale, ménages, pauvreté, part +65 ans…  
+    4. **Projection démographique** Insee alignée sur les scénarios TRACC (2030 et 2050).  
+    5. Intégration dans une **plateforme interactive Streamlit** pour permettre :
+    - la sélection dynamique d’un territoire (commune / EPCI / département / région)  
+    - la visualisation cartographique  
+    - l’analyse de la vulnérabilité climatique et démographique  
+
+    ---
+
+    ## 🛰️ Données utilisées
+
+    ### 🌡️ Données climatiques  
+    Projection régionale CPRCM (CNRM-AROME46t1, 2,5 km) selon 3 périodes :
+
+    | Période | Scénario TRACC | Année pivot | Fenêtre temporelle |
+    |--------|----------------|-------------|---------------------|
+    | Aujourd’hui | Baseline | 2025 | 2015–2034 |
+    | +2°C | TRACC 2030 | 2052 | 2042–2061 |
+    | +2.7°C | TRACC 2050 | 2078 | 2068–2087 |
+
+    ---
+
+    ## 📊 Indicateurs retenus
+
+    Pour chaque scénario, 4 indicateurs majeurs :
+
+    - **Nombre annuel de nuits tropicales**  
+    - **Nombre annuel de jours en vague de chaleur (min >20°C & max >35°C)**  
+    - **Nombre de jours en vague de nuits tropicales**  
+    - **Nombre de jours en vague de chaleur v0 (max >35°C)**  
+
+    ⚠️ Les valeurs correspondent au **pire cas possible** sur 20 ans (maximum annuel).
+
+    ---
+
+    ## 🏛️ Usages attendus
+
+    - aide à la **planification territoriale** et à la politique de la ville  
+    - identification des **quartiers prioritaires** les plus exposés  
+    - appui à la lutte contre les **îlots de chaleur urbains**  
+    - préparation des plans d’adaptation locaux (PCAET, diagnostics CRTE…)
+
+    ---
     """)
+)
 
 # --- Onglet 2 : Carte interactive ---
 with tabs[1]:
