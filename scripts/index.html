@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Populations et changement climatique - Hackathon Météo France</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.12.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.12.0/mapbox-gl.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <div id="map"></div>
+
+        <div class="liste-couches">
+
+            <div id="lien_heatwave" class="coucheRTE">
+                <div id="oeil_heatwave"><i class="far fa-thin fa-eye-slash"></i></div>
+                heatwave
+            </div>
+            
+       
+            <div id="lien_tropical-night" class="coucheRTE">
+                <div id="oeil_tropical-night"><i class="far fa-thin fa-eye-slash"></i></div>
+                tropical-night
+            </div>
+            
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
