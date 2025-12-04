@@ -192,14 +192,14 @@ with tabs[0]:
 
 # --- Onglet 2 : Carte interactive ---
 with tabs[1]:
-    st.header("Carte interactive des indicateurs de chaleur")
+    #st.header("Carte interactive des indicateurs de chaleur")
 
     # ⚠️ Warning pour le temps de chargement
     st.warning("⚠️ Le temps de chargement de la carte peut être un peu long en fonction de votre connexion et du filtrage choisi.")
 
 
-    st.markdown("### 🔎 Carte dynamique hébergée sur le site de l'équipe")
-    st.markdown("*(Développée via Mapbox )*")
+    #st.markdown("### 🔎 Carte dynamique hébergée sur le site de l'équipe")
+    #st.markdown("*(Développée via Mapbox )*")
 
     # ---- Affichage de la carte via IFRAME ----
     st.components.v1.iframe(
